@@ -1,0 +1,18 @@
+post http://localhost:3333/users
+Content-Type: application/json
+
+{
+  "name": "Claudney Sarti Sessa",
+  "email": "claudneysartisessa@gmail.com"
+}
+
+### 
+
+PATCH  http://localhost:3333/users/82e1ceb7-3910-4cff-928c-6d48ae64c3ab/admin
+Content-Type: application/json
+
+### 
+
+get http://localhost:3333/users
+Content-Type: application/json
+user_id: 82e1ceb7-3910-4cff-928c-6d48ae64c3ab
