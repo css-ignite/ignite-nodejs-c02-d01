@@ -18,7 +18,7 @@ class UsersRepository implements IUsersRepository {
     return UsersRepository.INSTANCE;
   }
 
-  create({ name, email }: ICreateUserDTO): User {
+  create({ name, email, admin }: ICreateUserDTO): User {
     const user = new User();
 
     Object.assign(user, {
